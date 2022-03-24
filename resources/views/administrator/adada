@@ -1,0 +1,20 @@
+@foreach ($kriterias as $kriteria)
+@php
+  $idout = (string)$kriteria->id;
+    if (strlen($idout) <=1){
+      $idout = "C0".$idout;
+    }else{
+      $idout = "C".$idout;
+    }
+@endphp   
+<tr>
+  <td>{{ $idout }}</td>
+  <td>{{ $kriteria->kriteria }}</td>
+  <td>{{ $kriteria->bobot_kriteria }}</td>
+  <td>{{ $kriteria->atribut }}</td>
+  <td>
+    <a href="{{ route('edit-krit', $kriteria->id) }}" class="btn btn-warning">Ubah</a>
+    <a href="{{ route('del-krit', $kriteria->id) }}" class="btn btn-danger">Hapus</a>
+  </td>
+</tr>
+@endforeach

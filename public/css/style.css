@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Benne&family=Poppins:wght@400;500&family=Titillium+Web:wght@400;600&display=swap');
+
+/* color: #0F96EA, #014EAA */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Viga';
+    src: url("Viga-Regular.ttf");
+}
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500 !important;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* .wrapper {
+    overflow-y: hidden;
+} */
+
+.navbar {
+    background-color: transparent;
+    /* background-color: #025eb9; */
+    transition: all .3s;
+    z-index: 999;
+}
+
+.navbar .navbar-toggler {
+    outline: none;
+}
+
+.navbar .navbar-brand {
+    font-family: 'Viga';
+    font-size: 30px;
+}
+
+.h-name{
+    font-family: 'Amatic SC', cursive !important;
+    font-weight: 700;
+    font-size: 45px !important;
+}
+
+.navbar .navbar-nav .nav-link {
+    text-transform: uppercase;
+    margin-left: 25px;
+    color: #fff;
+}
+
+.navbar .navbar-nav {
+    background-color: #FFA75A;
+    border-radius: 5px !important;
+    padding: 10px;
+}
+
+.navbar-nav a:hover {
+    color: #000 ;
+    transition: 250ms;
+    border-radius: 10px;
+    padding-left: 10px;
+    width: auto;
+    background: linear-gradient(to right, #0489e3, #025eb9);
+}
+
+.home {
+    background-image: url(../img/header.png);
+    background-size: cover;
+    width: 100%;
+    min-height: 90vh;
+    background-position: bottom;
+}
+
+.home {
+    padding-top: 150px;
+}
+
+.home h1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.home p {
+    color: rgba(255, 255, 255, .8);
+}
+
+.experience {
+    margin-bottom: 100px;
+}
+
+.experience .card, .altkrit .card, .provmore .card {
+    border-left: 10px solid #FFA75A;
+}
+
+.altkrit .card {
+    height: 430px;
+}
+
+.altkrit .col-md-4 {
+    margin-bottom: 70px;
+}
+
+/* .provmore .card {
+    height: 500px;
+} */
+
+.provmore .img-fluid {
+    width: 100%;
+    padding: 0 15px;
+    margin-top: 15px;
+    height: 330px !important;
+}
+
+.experience .card,
+.skills .card,
+.projects .card,
+.altkrit .card,
+.provmore .card {
+    box-shadow: 0 15px 20px rgba(0, 0, 0, .08);
+    transition: all .3s;
+}
+
+.experience .card:hover,
+.skills .card:hover,
+.projects .card:hover,
+.altkrit .card:hover,
+.provmore .card:hover {
+    box-shadow: 0 15px 20px rgba(0, 0, 0, .5);
+}
+
+.experience .card .col-3 {
+    text-align: center;
+}
+
+.experience .card .col-12 {
+    padding-left: 20px;
+}
+
+.experience .card .col-12 h4, .altkrit .col-md-4 .altkrit-title, .matriks-title {
+    font-weight: 700;
+    color: #2d3748;
+}
+
+.experience .card h4::after, .altkrit .col-md-4  .altkrit-title::after, .matriks-title::after,
+.provmore .card h4::after {
+    content: "";
+    display: block;
+    left: 0;
+    width: 150px;
+    height: 3px;
+    background-image: linear-gradient(to right, #FFA75A, #FF5E4F);
+}
+
+.experience .card .col-12 p {
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 20px;
+    color: #4a5568;
+    font-style: italic;
+}
+
+.experience .card .col-12 a {
+    font-size: 14px;
+}
+
+.skills {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.skills h5 {
+    margin-top: 20px;
+    font-weight: 600;
+    color: #4a5568;
+}
+
+.skills p {
+    color: #718096;
+}
+
+.projects .card {
+    text-transform: uppercase;
+}
+
+.projects .card,
+.projects .card-img {
+    border-radius: 5px;
+}
+
+.projects .card-text {
+    font-weight: 600;
+    color: #4a5568;
+    margin-top: -5px;
+}
+
+.author h3 {
+    font-family: 'Benne', serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin-top: 1.5rem;
+}
+ 
+.author p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 13px !important;
+}
+
+.img-auth {
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    background-image:url(../img/fikri.jpeg); 
+    width: 100px; 
+    height: 100px;  
+    margin-bottom: 10px;
+}
+
+.caption h2 {
+    font-family: 'Benne', serif;
+    font-weight: 600;
+    font-size: 34px;
+}
+
+.caption p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.about, .contact, .provmore {
+    padding-bottom: 150px;
+}
+
+.contact .smd {
+    cursor: pointer;
+    margin: 0 10px;
+    transition: all .1s;
+}
+
+.contact .smd:hover {
+    margin-top: -10px;
+}
+
+.border-footer {
+    box-shadow: 0px -10px 15px rgba(255, 255, 255, 0.3);
+    background: #F3F1F5;
+    color: #000;
+    padding: 100px 0px 0px 0px;
+}
+
+.border-footer .col-md-6 {
+    padding-bottom: 70px !important;
+}
+
+.border-footer .col-md-3 {
+    padding-bottom: 40px !important;
+}
+
+.contact h1 {
+    font-size: 60px;
+    color: #2d3748;
+    margin-top: 20px;
+}
+
+.contact p, .about p {
+    color: #4a5568;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.about .contact .smd {
+    cursor: pointer;
+    margin: 0 10px;
+    transition: all .1s
+}
+
+.about .contact .smd:hover {
+    margin-top: -8px
+}
+
+.footer {
+    background: #141b25;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+    /* display: inline-block; */
+    text-align: left;
+    position: relative;
+}
+
+.footer h3 {
+    padding-bottom: 10px;
+}
+
+.end-footer {
+    background: #141b25;
+    position: relative;
+    color: #fff;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    padding: 10px 0 30px 0;
+}
+
+.adds h3, .links h3, .more h3 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.links ul li, .more ul li {
+    list-style: none;
+    line-height: 2rem;
+}
+
+.links ul li a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #fff;
+    transition: 250ms;
+}
+
+.links ul li a:hover {
+    transition: 250ms;
+    color: #FFA75A;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.more ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: 250ms;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.more ul li a:hover {
+    transition: 250ms;
+    color: #FFA75A;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.label-menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 10vh 0 5vh 0;
+}
+
+.label-menu p {
+    font-size: 40px;
+    color: #000;
+    font-weight: 700;
+}
+
+.label-menu p::after {
+    content: "";
+    display: block;
+    height: 25px;
+    margin-top: -25px;
+    background-image: linear-gradient(to right, #FFA75A, #FF5E4F);
+}
+
+.table-container {
+    width: 100%;
+    overflow-y: auto;
+    _overflow: auto;
+    margin: 0 0 1em;
+}
+
+/* Utility */
+a {
+    color: #014EAA;
+    transition: all .3s;
+}
+
+a:hover {
+    color: #FFA75A;
+    text-decoration: none;
+}
+
+.btn {
+    font-weight: 500;
+    box-shadow: none !important;
+}
+
+.btn-user {
+    border-radius: 25px !important;
+    padding: 10px 30px !important;
+}
+
+.btn-primary {
+    background-image: linear-gradient(to right, #FFA75A, #FF5E4F);
+    border: 0;
+}
+
+.btn-primary:hover{
+    background-image: linear-gradient(to right, #ff5af7, #fc7c70);
+    border: 0;
+}
+
+.card {
+    border: 0;
+}
+
+.bg-linear-primary {
+    background-image: linear-gradient(to right, #2196f3, #0d47a1)
+}
+
+.bg-grey {
+    background: linear-gradient(to right, #0489e3, #025eb9);
+}
+
+.tag li {
+    padding: 5px 8px;
+    color: #4a5568;
+    background-color: #e2e8f0;
+    width: fit-content;
+    border-radius: 2px;
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+@media (min-width: 992px) {
+    .navbar .navbar-nav {
+        background-color: transparent;
+        /* background-color: #025eb9; */
+        padding: 0;
+        border-radius: 20px;
+    }
+
+    .navbar .navbar-nav .nav-link:hover {
+        color: #FFA75A;
+    }
+
+    .home .left h1 {
+        color: #fff;
+        font-weight: 700;
+        font-size: 54px;
+    }
+}
